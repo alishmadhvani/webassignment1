@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+//THIS KEEPS TRACK ON WHICH QUESTION USER IS
 var x=1;
+//THIS IS THE CORRECT ANSWER COUNTER
 var y=0;
+//THIS IS USED TO CHANGE COLOUR OF THE METER
 var test=false;
 function func1(){
    
