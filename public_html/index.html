@@ -11,6 +11,23 @@
         </script>
     </head>
     <body id="body">
+        <input type="button" value="HELP" onclick="func3()" id="helpbtn">
+        <div id="help">
+            This game presents questions one by one with 4 options each. <br>
+            One option of them is a correct.<br>
+            There are two buttons at the bottom which function as they say.<br>
+            There is a meter on the top which changes colour according to the answer entered by the user<br>
+            In the end the final score is shown<br><br>
+            
+             <input type="button" value="return" onclick="func4()" id="returnbtn">
+        </div>
+       
+        <div id="maincontent">
+        <div id="shapes">
+            <span id="shp1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id="shp2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span id="shp3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div><br><br>
          <div id="results1">
              YOU ANSWERED THE QUESTION CORRECTLY
          </div>
@@ -25,15 +42,18 @@
             </div>
                 <fieldset id="que">
                     <legend id="leg">Q1. How many alphabets does english language have?</legend>
+                    <div id="options">
                     <input type="radio" name="ans" id="wa1"><span id="opt1">24</span><br><br>                    
                     <input type="radio" name="ans" id="ra"><span id="opt2">26</span><br><br>                    
                     <input type="radio" name="ans" id="wa2"><span id="opt3">20</span><br><br>                    
                     <input type="radio" name="ans" id="wa3"><span id="opt4">28</span><br><br>                    
+                    </div>
                 </fieldset>                              
-        </div>
+        </div><br><br>
          <div id="buttons">
-            <input type="button" value="enter answer" onclick="func1()" id="but1">
-            <input type="button" value="next question" onclick="func2()" id="but2">
+            <input type="button" value="enter answer" onclick="func1()" id="btn1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="next question" onclick="func2()" id="btn2">
          </div>
+        </div>
     </body>
 </html>
