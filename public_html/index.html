@@ -5,29 +5,35 @@
         <title>Trivia game</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/main.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/javascript.js">
             
         </script>
     </head>
     <body id="body">
-        <div id="content">
-            <div id="shape">
-                
-            </div>
-            <form>
-                <fieldset id="que">
-                    <legend id="leg">Q1. How many alphabets does english language have?</legend>
-                    <input type="radio" name="ans" id="wa1">24<br><br>                    
-                    <input type="radio" name="ans" id="ra">26<br><br>                    
-                    <input type="radio" name="ans" id="wa2">20<br><br>                    
-                    <input type="radio" name="ans" id="wa3">28<br><br>                    
-                </fieldset>                    
-            </form>
-            <input type="button" value="enter answer" onclick="hideques()">
+         <div id="results1">
+             YOU ANSWERED THE QUESTION CORRECTLY
+         </div>
+        <div id="results2">
+            YOU ANSWERED THE QUESTION WRONG
         </div>
-        <div id="result">
+        <div id="finalscr">
             
         </div>
+        <div id="content">
+            <div id="shape">
+            </div>
+                <fieldset id="que">
+                    <legend id="leg">Q1. How many alphabets does english language have?</legend>
+                    <input type="radio" name="ans" id="wa1"><span id="opt1">24</span><br><br>                    
+                    <input type="radio" name="ans" id="ra"><span id="opt2">26</span><br><br>                    
+                    <input type="radio" name="ans" id="wa2"><span id="opt3">20</span><br><br>                    
+                    <input type="radio" name="ans" id="wa3"><span id="opt4">28</span><br><br>                    
+                </fieldset>                              
+        </div>
+         <div id="buttons">
+            <input type="button" value="enter answer" onclick="func1()" id="but1">
+            <input type="button" value="next question" onclick="func2()" id="but2">
+         </div>
     </body>
 </html>
