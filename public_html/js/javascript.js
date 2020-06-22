@@ -31,17 +31,15 @@ var gameOver = false;
  5. sets the game over flag to false to indicate that the game is in progress
  */
 function resetGame() {
-
     // TODO: document this code from class
     for ( i = 0; i < board.length; i++) {
         board[i].innerHTML = "";
     }
-  
-    // TODO reset player back to X and update it on the page
-    
-
-    // TODO reset gameOver and # of empty cells
-}
+    player="X";
+    document.getElementById("player").innerHTML = player;
+    empty=9;
+    gameOver=false;
+    }
 
 /* Function cellClicked() is called
  when the event listeners for the "td" cells fire which occurs
@@ -53,17 +51,22 @@ function resetGame() {
  5. updates the message to the current player
  */
 function cellClicked(cell) {
-
     //TODO: 1-5 should occur only when the selected cell is empty and the game is 
     // still in progress!
 
     // TODO: decrease # of empty cells by 1
   
     // TODO: document this code from class
+    if(empty>0){
+    if(gameOver===false){
+       
     cell.innerHTML = player;
     checkWin();    
     player = (player === "X") ? "O" : "X";
     document.getElementById("player").innerHTML = player;
+    empty--;
+    }
+    }
 }
 
 /* Function checkWin() is called to check all winning combinations and display results

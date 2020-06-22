@@ -10,7 +10,9 @@ and open the template in the editor.
         <title>Tic Tac Toe</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="js/javascript.js">
+            </script>
     </head>
     <body>
         <!-- main content -->
@@ -22,29 +24,29 @@ and open the template in the editor.
 <!-- game board -->
 <table>
   <tr>
-    <td>0</td>
-    <td>1</td>
-    <td>2</td>
+      <td onclick="cellClicked()">0</td>
+    <td onclick="cellClicked()">1</td>
+    <td onclick="cellClicked()">2</td>
   </tr>
   <tr>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
+    <td onclick="cellClicked()">3</td>
+    <td onclick="cellClicked()">4</td>
+    <td onclick="cellClicked()">5</td>
   </tr>
   <tr>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
+    <td onclick="cellClicked()">6</td>
+    <td onclick="cellClicked()">7</td>
+    <td onclick="cellClicked()">8</td>
   </tr>
 </table>
 
 <!-- play information and controls -->
 <p>Player <span id="player">X</span> Go!
-  <button id="reset">Reset Game</button>
+    <button id="reset" onclick="resetGame()">Reset Game</button>
 </p>
 
 <!-- footer -->
- <footer>YourName @ Sheridan SYST10199 Web Programming
+ <footer>Alish Madhvani @ Sheridan SYST10199 Web Programming
 </footer>
 
 <!-- hidden elements used for displaying results -->
