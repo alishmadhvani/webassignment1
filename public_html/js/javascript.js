@@ -39,8 +39,11 @@ function resetGame() {
     document.getElementById("player").innerHTML = player;
     empty=9;
     gameOver=false;
+    document.getElementById("winner").style["display"]=block;
+     document.getElementById("winner").innerHTML="";
     }
-
+    
+  
 /* Function cellClicked() is called
  when the event listeners for the "td" cells fire which occurs
  when the user clicks on one of the nine cells of the board
@@ -50,6 +53,7 @@ function resetGame() {
  4. flips (changes) the current player
  5. updates the message to the current player
  */
+
 function cellClicked(cell) {
     //TODO: 1-5 should occur only when the selected cell is empty and the game is 
     // still in progress!
@@ -57,23 +61,30 @@ function cellClicked(cell) {
     // TODO: decrease # of empty cells by 1
   
     // TODO: document this code from class
-    document.getElementById("gomessage").style["display"]="none";
-    if(empty>0){
+    
+    if(empty>0 && cell.innerHTML==""){
     if(gameOver===false){
-       
     cell.innerHTML = player;
     checkWin();    
     player = (player === "X") ? "O" : "X";
     document.getElementById("player").innerHTML = player;
+    
+    
+    document.getElementById("player").innerHTML = player;
+    }
+     else{
+        document.getElementById("gomessage").style["display"]="none";
+    }
     empty--;
     }
+   
     }
-}
+
 
 /* Function checkWin() is called to check all winning combinations and display results
  */
 function checkWin() {
-
+alert("i am in check wuin");
     // TODO: document all of the code from class
     for ( i = 0; i < winSets.length; i++) {
         if (board[winSets[i][0]].innerHTML == board[winSets[i][1]].innerHTML 

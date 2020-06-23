@@ -24,24 +24,24 @@ and open the template in the editor.
 <!-- game board -->
 <table>
   <tr>
-      <td onclick="cellClicked()">0</td>
-    <td onclick="cellClicked()">1</td>
-    <td onclick="cellClicked()">2</td>
+      <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
   </tr>
   <tr>
-    <td onclick="cellClicked()">3</td>
-    <td onclick="cellClicked()">4</td>
-    <td onclick="cellClicked()">5</td>
+    <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
   </tr>
   <tr>
-    <td onclick="cellClicked()">6</td>
-    <td onclick="cellClicked()">7</td>
-    <td onclick="cellClicked()">8</td>
+    <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
+    <td onclick="cellClicked(this)"></td>
   </tr>
 </table>
 
 <!-- play information and controls -->
-<p id="gomessage">Player <span id="player">X</span> Go!
+<p><span id="gomessage">Player <span id="player">X</span> Go!</span>
     <button id="reset" onclick="resetGame()">Reset Game</button>
 </p>
 
